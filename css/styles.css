@@ -1,4 +1,4 @@
-/** css/styles.css of bbauska/1990s creating 1990s.bauska.org */
+/** css/styles.css of bbauska/1980s creating 1980s.bauska.org */
 body {
   background: black;
   display: flex;
@@ -44,7 +44,7 @@ video, iframe {
   max-height: 100%;
   filter: contrast(1.2) brightness(1.1);
 }
-/**  background-image: url(https://github.com/bbauska/1990s/blob/main/images/Television_static.gif);  **/
+/**  background-image: url(https://github.com/bbauska/1980s/blob/main/images/Television_static.gif);  **/
 .glitch {
   pointer-events: none;
   position: absolute;
@@ -90,7 +90,7 @@ canvas {
   max-height: 100%;
 }
 
-/**  background-image: url(https://github.com/bbauska/1990s/blob/main/images/Television_static.gif");  **/
+/**  background-image: url(https://github.com/bbauska/1980s/blob/main/images/Television_static.gif");  **/
 /**  background: url(https://upload.wikimedia.org/wikipedia/commons/0/02/Television_static.gif);  **/
 .snow-effect {
   position: absolute;
