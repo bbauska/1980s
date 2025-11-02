@@ -104,7 +104,7 @@ function switchToNextVideo() {
   snowEffect.style.opacity = 1;
   setTimeout(() => {
     currentVideoIndex = (currentVideoIndex + 1) % videoIds.length;
-    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=1&mute=1`;
+    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=0&mute=1`;
     snowEffect.style.opacity = 0;
   }, 2000); // 2 seconds of static before switching
 }
@@ -112,3 +112,21 @@ https://youtu.be/
 iframe.addEventListener("load", () => {
   setTimeout(switchToNextVideo, 17000);  // play for 17 seconds
 });
+
+/*
+    <iframe id="ytplayer" type="text/html" width="720" height="540" alt="YouTube videos of the 1980's." 
+        src="https://www.youtube.com/embed/bN2hrTIAF-o?autoplay=1&controls=0&loop=1&mute=1"
+        frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+    </iframe>
+1980's
+https://youtu.be/aPzS3QYb868 = the simpsons (1989-current 2025)
+https://youtu.be/2hBSMInlDGg = ALF (86-90)
+https://youtu.be/0JdxlRIcn1k = newhart (82-90)
+https://youtu.be/7KtAgAMzaeg = cheers (82-93)
+https://youtu.be/tUltrX-ICew = night court (84-92)
+https://youtu.be/csVaRY1ptZ0 = the wonder years (88-93)
+https://youtu.be/KAKaJE4gjYg = married with children (87-97)
+https://youtu.be/HnDtvZXYHgE = star trek: the next generation (87-94)
+https://youtu.be/1rzC5qrYZXs = seinfeld (89-98)
+https://youtu.be/DjK9GJMBpt0 = quantum leap (89-93)
+*/
