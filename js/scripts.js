@@ -19,7 +19,6 @@ class VCREffect {
     }, options);
     this.init();
   }
-
   init() {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
@@ -34,7 +33,6 @@ class VCREffect {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
   }
-
   generateVCRNoise() {
     if (this.config.fps >= 60) {
       cancelAnimationFrame(this.vcrInterval);
@@ -50,7 +48,6 @@ class VCREffect {
       }, 1000 / this.config.fps);
     }
   }
-
   renderTrackingNoise(radius = 2) {
     const { canvas, ctx, config } = this;
     let { miny, miny2, num } = config;
@@ -70,7 +67,6 @@ class VCREffect {
     }
     ctx.closePath();
   }
-
   renderTail(ctx, x, y, radius) {
     const n = getRandomInt(1, 50);
     const dirs = [1, -1];
@@ -95,6 +91,7 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
+
 const videoIds = ["aPzS3QYb868", "2hBSMInlDGg", "0JdxlRIcn1k", "7KtAgAMzaeg", "tUltrX-ICew", 
                   "csVaRY1ptZ0", "KAKaJE4gjYg", "HnDtvZXYHgE", "1rzC5qrYZXs", "DjK9GJMBpt0"];
 let currentVideoIndex = 0;
@@ -109,7 +106,7 @@ function switchToNextVideo() {
     snowEffect.style.opacity = 0;
   }, 3000);  /* 3 seconds of static before switching */
 }
-https://youtu.be/
+
 iframe.addEventListener("load", () => {
   setTimeout(switchToNextVideo, 17000);  /* 17 seconds of video play */
 });
