@@ -24,7 +24,6 @@
   <meta name="msapplication-TileColor" content="#7ed917">  <!-- vivid green -->
   <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
   <meta name="theme-color" content="#7ed917">  <!-- vivid green -->
-  <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
 
   <!-- author, title, description, viewport & robots -->
   <meta name="author" content="Brian Bauska">
@@ -62,8 +61,10 @@
   <div class="tv-screen"></div>
   <div class="tv-container">
     <canvas id="canvas"></canvas>
-      <iframe width="540" height="720" 
+      <iframe id="ytplayer" width="540" height="720" 
         src="https://www.youtube.com/embed/2hBSMInlDGg?autoplay=1&controls=0&loop=1&mute=1" 
+        aria-label="YouTube television series videos of the 1980s" 
+        title="YouTube television series videos of the 1980s" 
         allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
       </iframe>
       <div class="glitch"></div>
